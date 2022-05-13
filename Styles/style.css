@@ -42,3 +42,9 @@ p {
     box-sizing: border;
     border: 3px solid white;
 }
+h1 {
+    font-size: 350%;
+    text-align: center;
+    border: 0;
+    margin-bottom: 15px;
+}
