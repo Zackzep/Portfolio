@@ -1,13 +1,13 @@
 #navigation {
     margin-bottom: 15px;
-    background-color: #563FEB;
+    background-color: #8A46E6;
     display: grid;
     grid-template-columns: repeat(4, auto);
     font-size: 20px;
     border: 1px solid white; 
 }
 a:hover {
-    background-color: #1E0B9E;
+    background-color: #521F99;
     transition: 1s;
 }
 a {
@@ -16,7 +16,7 @@ a {
     height: 25px;
 }
 body {
-    background-color: #1E0B9E;
+    background-color: #521F99;
 }
 p {
     color: #FFEA5E;
@@ -35,7 +35,7 @@ p {
 
 .article {
     display: grid;
-    background-color: #563FEB;
+    background-color: #8A46E6;
     padding: 2.5px;
     margin-bottom: 15px;
     margin-top: 15px;
