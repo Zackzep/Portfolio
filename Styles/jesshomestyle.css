@@ -1,0 +1,79 @@
+h1 {
+    font-size: 600%;
+    text-align: center;
+    border: 0;
+    margin-bottom: 100px;
+    color: #CF04F0;
+}
+.intro{
+    border: 5px solid #FA1BA0;
+    width: 60%;
+    margin-left: 20%;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    background-color: #E03B38;
+}
+a:hover {
+    background-color: #CF04F0;
+    transition: 1s;
+}
+
+body {
+    background-color: #F06D18;
+}
+#MainContainer {
+    width: 60%;
+    margin-left: 30%;
+    padding: 0;
+    border: 0;
+}
+#ArtPageContainer {
+    display: grid;
+    grid-template-columns: 70% auto;
+    height: 300px;
+}
+.ArtSection {
+    display: grid;
+    grid-template-columns: 350px auto;
+    background-color: #E03B38;
+    padding: 2.5px;
+    margin-bottom: 15px;
+    margin-top: 15px;
+    box-sizing: border;
+    border: 2px solid #FA1BA0;
+}
+h3 {
+    color: #FFEA5E;
+    font-size: 225%;
+    font-family: 'Times New Roman', Times, serif;
+}
+p {
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 150%;
+    font-style: italic;
+    padding: 5px;
+}
+.ArtContent {
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    box-sizing: border;
+    border: 2px solid white;
+}
+#navigation {
+    background-color: #E03B38;
+    display: grid;
+    grid-template-columns: repeat(5, auto);
+    font-size: 20px;
+    border: 5px solid #FA1BA0;
+}
+a {
+    text-align: center;
+    border: 0;
+    height: 25px;
+    color: white;
+}
+.ArtSummary {
+    border-top: 1px solid white;
+}
