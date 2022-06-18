@@ -77,3 +77,28 @@ a {
 .ArtSummary {
     border-top: 1px solid white;
 }
+#subpagecontainer {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-template-rows: repeat(3, auto);
+    margin-top: 40px;
+    width: 75%;
+    margin-left: 12%;
+}
+
+#imgdist {
+    margin: 10px;
+}
+
+#subpagecontainer2 {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-template-rows: repeat(2, auto);
+    margin-top: 40px;
+    width: 75%;
+    margin-left: 12%;
+}
+
+#mural {
+    margin-left: 32%;
+}
