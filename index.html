@@ -5,45 +5,33 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Zack Z Portfolio</title>
-    <link href="Styles/style.css"rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link href="Styles/style.css" rel="stylesheet">
 </head>
 <body>
-    <h1 style="color: #E6E145"><b>Zack Zepezauer's Portfolio</b></h1>
-    
-    <div class="intro">
-        <p>As a new student to the field of computer science, pinpointing what path I want to take most is difficult.  However, I find most trajectories to be appealing ranging from game development to web design.  Here you will see projects I have or am working on, and I hope you find them to be interesting.</p>
-    </div>
-    
-    <div id="container">
-        <div id="navigation">
-            <a id="navlink" style="color: #E6E145" href="https://zackzep.github.io/Portfolio/">Home</a>
-            <a id="navlink" style="color: #E6E145" href="https://zackzep.github.io/PersonalBlog/aboutme.html">About Me</a>
-            <a id="navlink" style="color: #E6E145" href="https://zackzep.github.io/PersonalBlog/">Blog Home</a>
-            <a id="navlink" style="color: #E6E145" href="portfolioupdates.html">Updates</a>
-            <a id="navlink" style="color: #E6E145" href="https://www.linkedin.com/in/zachary-zepezauer-95162b23a/">Contact</a>
-        </div>
-        <div id="blog container">
-            <div id="blog-articles">
-                <div class="article">
-                    <img id="jessface" src="images/jessicaportrait.png" alt="SoftDev" width="350px" height="500px">
-                    <div class="article-content">
-                        <h3><a id= "projectlink" style="color: #E6E145" href="jessica.html">My Friend's Art Page</a></h3>
-                        <div class="article-summary">
-                            <p>This is a web page I designed for my dear longtime friend who happens to be a phenomenal artist.  Beyond creating art herself, she also teaches it.</p>
-                        </div>
-                    </div>
+    <header>
+        <h1>Zack Zepezauer's Portfolio</h1>
+        <p class="intro">As a new student in the field of computer science, pinpointing my ideal path can be challenging. However, I find various trajectories appealing, from game development to web design. Here, you'll find projects I have worked on or am currently developing. I hope you find them interesting!</p>
+    </header>
+
+    <nav id="navigation">
+        <a class="navlink" href="https://zackzep.github.io/Portfolio/">Home</a>
+        <a class="navlink" href="https://zackzep.github.io/PersonalBlog/aboutme.html">About Me</a>
+        <a class="navlink" href="https://zackzep.github.io/PersonalBlog/">Blog Home</a>
+        <a class="navlink" href="portfolioupdates.html">Updates</a>
+        <a class="navlink" href="https://www.linkedin.com/in/zachary-zepezauer-95162b23a/">Contact</a>
+    </nav>
+
+    <main id="container">
+        <section id="blog-articles">
+            <article class="article">
+                <img src="images/pizzaprog2.png" alt="Pizza Point of Sale Project" class="article-image">
+                <div class="article-content">
+                    <h3><a href="https://zackzep.github.io/Java-Assignment/">Pizza Point of Sale</a></h3>
+                    <p>A JavaScript-based point of sale project I created in the first quarter of my education.</p>
                 </div>
-                <div class="article">
-                    <img src="images\pizzaprog2.png" alt="webdev" width="505px" height="300px">
-                    <div class="article-content">
-                        <h3><a style="color: #E6E145" href="https://zackzep.github.io/Java-Assignment/">Pizza Point of Sale</a></h3>
-                        <div class="article-summary">
-                            <p>A javascript based point of sale project I created in the first quarter of my education.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+            </article>
+        </section>
+    </main>
 </body>
 </html>
