@@ -89,3 +89,13 @@ p {
     margin: 0;
     color: #555;
 }
+h1 {
+    font-size: 3em; /* Adjust size as needed */
+}
+
+h2 {
+    font-size: 1em; /* Make it smaller than h1 */
+    font-style: italic; /* Italicize the text */
+    margin-top: 0; /* Adjust top margin if needed */
+    margin-bottom: 10px; /* Space between h2 and other content */
+}
