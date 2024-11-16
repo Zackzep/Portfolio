@@ -1,0 +1,55 @@
+body {
+    font-family: 'Roboto', sans-serif;  /* Same font as the main stylesheet */
+    background-color: #f4f4f4;         /* Light background for all pages */
+    color: #333;                       /* Dark text for readability */
+    margin: 0;
+    padding: 0;
+}
+
+#navigation {
+    margin-bottom: 15px;
+    background-color: #34495e;        /* Consistent with main nav color */
+    display: flex;
+    justify-content: center;
+    padding: 15px;
+}
+
+.navlink {
+    color: #E6E145;                   /* Same accent color as in main stylesheet */
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.navlink:hover {
+    text-decoration: underline;
+}
+
+p {
+    color: #555;                   /* Same text color */
+    font-size: 1.1em;               /* Adjust font size for readability */
+    width: 95%;
+    padding-left: 15px;             /* Consistent padding for text */
+    line-height: 1.6;               /* Makes the text more readable */
+}
+
+#container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+}
+
+.article {
+    background-color: #fff;
+    padding: 15px;
+    margin: 20px 0;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Keeps consistency with main page */
+    text-align: center;
+}
+
+h1 {
+    font-size: 2.5em;              /* Match size with the main page's h1 */
+    text-align: center;            /* Keep it centered */
+    margin-bottom: 15px;           /* Consistent margin */
+}
