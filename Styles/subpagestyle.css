@@ -1,36 +1,52 @@
 body {
-    font-family: 'Roboto', sans-serif;  /* Same font as the main stylesheet */
-    background-color: #f4f4f4;         /* Light background for all pages */
-    color: #333;                       /* Dark text for readability */
+    font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
+    background-color: #f4f4f4;  /* Same background color */
+    color: #333;  /* Main text color */
 }
 
-#navigation {
-    margin-bottom: 15px;
-    background-color: #34495e;        /* Consistent with main nav color */
+header {
+    background-color: #2c3e50;  /* Header background color */
+    color: #E6E145;  /* Accent color */
+    padding: 15px 20px;  /* Add padding */
+    text-align: center;  /* Center align header text */
+    position: relative;
+}
+
+.intro {
+    font-size: 1.1em;
+    margin: 20px 10%;  /* Responsive margin */
+    padding: 15px;  /* Padding around the intro content */
+    background-color: #34495e;  /* Background color */
+    border-radius: 8px;  /* Rounded corners */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);  /* Soft box shadow */
+}
+
+nav {
     display: flex;
     justify-content: center;
+    background-color: #34495e;  /* Match the header background color */
     padding: 15px;
 }
 
 .navlink {
-    color: #E6E145;                   /* Same accent color as in main stylesheet */
+    color: #E6E145;  /* Accent color for links */
     margin: 0 15px;
     text-decoration: none;
     font-weight: bold;
 }
 
 .navlink:hover {
-    text-decoration: underline;
+    text-decoration: underline;  /* Hover effect for nav links */
 }
 
 p {
-    color: #555;                   /* Same text color */
-    font-size: 1.1em;               /* Adjust font size for readability */
+    color: #E6E145;  /* Slightly lighter text color */
+    font-size: 1.1em;  /* Larger text for readability */
     width: 95%;
-    padding-left: 15px;             /* Consistent padding for text */
-    line-height: 1.6;               /* Makes the text more readable */
+    padding-left: 15px;  /* Left padding for the paragraphs */
+    line-height: 1.6;  /* Line height for better readability */
 }
 
 #container {
@@ -40,16 +56,26 @@ p {
 }
 
 .article {
-    background-color: #fff;
+    background-color: #34495e;  /* White background for article */
     padding: 15px;
     margin: 20px 0;
-    border-radius: 8px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Keeps consistency with main page */
+    border-radius: 8px;  /* Rounded corners */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);  /* Soft box shadow */
     text-align: center;
 }
 
 h1 {
-    font-size: 2.5em;              /* Match size with the main page's h1 */
-    text-align: center;            /* Keep it centered */
-    margin-bottom: 15px;           /* Consistent margin */
+    font-size: 5em;  /* Large header */
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;  /* Bold */
+    color: #E6E145;  /* Accent color */
+    margin: 0;
+    padding: 0.2em 0.5em;  /* Padding around the text */
+    text-align: center;
+    position: relative;
+    display: inline-block;  /* Make the background fit the text */
+    background-color: #34495e;  /* Dark background for the header */
+    border-radius: 10px;  /* Rounded corners */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);  /* Soft shadow for depth */
 }
+
