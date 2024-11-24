@@ -42,7 +42,8 @@ nav {
 }
 
 #container {
-    max-width: 1200px;
+    /* max-width: 1200px; */
+    max-width: 90%;
     margin: auto;
     padding: 20px;
 }
@@ -69,7 +70,8 @@ nav {
 }
 
 .article-image {
-    width: 100%;
+    /* width: 100%; */
+    max-width: 100%;
     height: auto;
 }
 
