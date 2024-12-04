@@ -128,12 +128,12 @@ h2 {
     }
 
     nav {
-        flex-direction: column; /* Stack navigation links */
+        flex-direction: column;
         align-items: center;
     }
 
     .navlink {
-        margin: 5px 0; /* Reduced spacing */
+        margin: 5px 0;
     }
 
     #container {
@@ -141,16 +141,16 @@ h2 {
     }
 
     #blog-articles {
-        flex-direction: column; /* Ensure articles stack */
+        flex-direction: column;
     }
 
     .article {
         margin: 15px 0;
-        width: 90%; /* Reduce width for smaller screens */
+        width: 90%;
     }
 
     h1 {
-        font-size: 3em; /* Reduce font size */
+        font-size: 3em;
         padding: 0.5em; 
     }
 
@@ -159,19 +159,19 @@ h2 {
     }
 }
 
-/* Extra Small Screens */
+
 @media (max-width: 480px) {
     .intro {
-        font-size: 0.9em; /* Further reduce font size */
+        font-size: 0.9em;
         margin: 10px;
     }
 
     h1 {
-        font-size: 2em; /* Adjust title size */
+        font-size: 2em;
     }
 
     .navlink {
-        font-size: 0.9em; /* Smaller font for nav links */
+        font-size: 0.9em;
     }
 
     .article-content {
