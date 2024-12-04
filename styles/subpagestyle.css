@@ -97,3 +97,66 @@ h2 {
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
+
+@media (max-width: 768px) {
+    header {
+        padding: 10px 15px; 
+    }
+
+    .intro {
+        font-size: 1em;
+        margin: 10px 5%;
+        padding: 10px; 
+    }
+
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navlink {
+        margin: 5px 0;
+    }
+
+    #container {
+        padding: 15px;
+    }
+
+    #blog-articles {
+        flex-direction: column;
+    }
+
+    .article {
+        margin: 15px 0;
+        width: 90%;
+    }
+
+    h1 {
+        font-size: 3em;
+        padding: 0.5em; 
+    }
+
+    h2 {
+        font-size: 0.9em;
+    }
+}
+
+
+@media (max-width: 480px) {
+    .intro {
+        font-size: 0.9em;
+        margin: 10px;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+
+    .navlink {
+        font-size: 0.9em;
+    }
+
+    .article-content {
+        padding: 10px;
+    }
+}
