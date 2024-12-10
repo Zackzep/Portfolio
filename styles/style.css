@@ -9,8 +9,8 @@ body {
 
 header {
     display: flex;
-    flex-direction: column; /* Stack content vertically */
-    align-items: center; /* Center all content horizontally */
+    flex-direction: column; 
+    align-items: center;
     padding: 10px 20px;
     background-color: #2c3e50;
     position: relative;
@@ -20,10 +20,10 @@ header {
 
 .header-content {
     display: flex;
-    justify-content: center; /* Space between title and hamburger */
+    justify-content: center;
     width: 100%;
-    max-width: 1200px; /* Optional: limits max width */
-    align-items: center; /* Center items vertically within the header */
+    max-width: 1200px;
+    align-items: center; 
 }
 
 header h1 {
@@ -31,8 +31,7 @@ header h1 {
     font-family: 'Playfair Display', serif;
     font-weight: 700;
     color: #D4AF37;
-    margin: 0;
-    margin: 0 auto; /* Center the H1 horizontally */
+    margin: 0 auto;
     padding: 0.2em 0.5em; 
     text-align: center;
     position: relative;
@@ -43,33 +42,33 @@ header h1 {
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
 }
 
-/* About Me Section */
+
 .about-me {
     display: flex;
-    justify-content: space-between; /* Distribute space between text and photo */
+    justify-content: space-between;
     align-items: center;
     margin-top: 20px;
     width: 100%;
     max-width: 1200px;
     padding: 20px;
+    flex-wrap: wrap;
 }
 
 .about-text {
     flex: 1;
     padding: 20px;
-    color: #D4AF37; /* Text color */
+    color: #D4AF37;
     background-color: #34495e;
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    margin-right: 250px; /* Increase the space between text and photo */
+    margin-right: 150px;
 }
 
 .about-photo1 {
-    flex: 1; /* Takes available space */
+    flex: 1;
     display: flex;
-    justify-content: center;
     align-items: center;
-    position: relative; /* Needed for positioning child elements like about-photo2 */
+    position: relative;
 }
 
 .about-photo1 img {
@@ -80,23 +79,23 @@ header h1 {
 }
 
 .about-photo2 {
-    position: absolute; /* Allows overlapping */
-    bottom: 25px; /* Keeps vertical alignment relative to photo1 */
-    right: 650px; /* Adjusted to move the image closer to photo1 */
-    z-index: 1; /* Ensures it's above other elements */
-    width: 250px; /* Larger size for the circular image */
-    height: 250px; /* Ensure it's a perfect circle */
+    position: absolute;
+    bottom: 25px;
+    right: 650px;
+    z-index: 1;
+    width: 250px;
+    height: 250px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 .about-photo2 img {
-    width: 100%; /* Ensure the image fits within the defined size */
-    height: 100%; /* Maintain circular shape */
-    border-radius: 50%; /* Make the image circular */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional shadow for better aesthetics */
-    object-fit: cover; /* Ensure proper image scaling */
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    object-fit: cover;
 }
 
 
@@ -117,66 +116,57 @@ main {
 }
 
 
-/* General styling */
-#navigation {
-    display: flex;
-    align-items: center;
-}
-
-/* Hamburger icon */
 .hamburger {
-    margin-left: auto; /* Push the hamburger to the far right */
+    margin-left: auto;
     cursor: pointer;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     width: 30px;
     height: 25px;
-    margin-left: auto; /* Ensures the hamburger stays on the right */
-    margin-right: 30px; /* Move the hamburger slightly to the left */
+    margin-left: auto;
+    margin-right: 30px;
 }
 
 .hamburger div {
     width: 100%;
     height: 4px;
-    background-color: #D4AF37; /* Set the color to #D4AF37 */
+    background-color: #D4AF37;
     border-radius: 2px;
 }
 
 .hamburger-container {
     position: absolute;
-    right: 20px; /* Position the hamburger 20px from the right */
-    top: 30px; /* Align the hamburger to the top of the header */
+    right: 20px;
+    top: 30px;
     cursor: pointer;
 }
 
-/* Dropdown menu (hidden by default) */
 .dropdown-menu {
     position: absolute;
-    top: 40px; /* Position below the hamburger */
-    right: 0; /* Align with the right side of the hamburger */
+    top: 30px;
+    right: 0;
     background-color: #34495e;
     border: 1px solid #ccc;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     padding: 10px 0;
     z-index: 1000;
-    visibility: hidden; /* Initially hidden */
-    opacity: 0; /* Initially transparent */
-    height: 0; /* Start with no height */
-    overflow: hidden; /* Prevent overflow when closed */
-    transform: translateY(-20px); /* Start off above */
-    transition: visibility 0s 0.3s, opacity 0.3s ease, height 0.3s ease, transform 0.3s ease; /* Transition for sliding down */
+    visibility: hidden;
+    opacity: 0;
+    height: 0;
+    overflow: hidden;
+    transform: translateY(-20px);
+    transition: visibility 0s 0.3s, opacity 0.3s ease, height 0.3s ease, transform 0.3s ease;
 }
 
 .hamburger-container:hover .dropdown-menu {
-    visibility: visible; /* Make visible */
-    opacity: 1; /* Fade in */
-    height: auto; /* Allow height to expand */
-    transform: translateY(0); /* Slide down */
-    transition: visibility 0s, opacity 0.3s ease, height 0.3s ease, transform 0.3s ease; /* Transition the height and opacity */
+    visibility: visible;
+    opacity: 1;
+    height: auto;
+    transform: translateY(0);
+    transition: visibility 0s, opacity 0.3s ease, height 0.3s ease, transform 0.3s ease;
 }
 
-/* Links in dropdown */
 .dropdown-menu .navlink {
     text-decoration: none;
     color: #D4AF37;
@@ -189,59 +179,65 @@ main {
     background-color: #2c3e50;
 }
 
-/* Show dropdown when active */
 .dropdown-menu.active {
     display: flex;
 }
 
 #container {
     max-width: 1200px;
-    margin: auto;
+    margin: 0 auto;
     padding: 20px;
+    display: flex;
+    justify-content: center;
 }
 
-#blog-articles {
+#project-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    width: 100%;
+}
+
+.project {
+    background: #34495e;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    margin: 20px 0;
+    width: 100%;
+    max-width: 600px;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.article {
-    background: #34495e;
-    border-radius: 8px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-    margin: 20px 0;
-    overflow: hidden;
-    transition: transform 0.2s;
-    width: 100%;
-    max-width: 600px;
-}
-
-.article-image {
+.project-image {
     width: 100%;
     height: auto;
+    border-radius: 8px;
 }
 
-.article-content {
+.project-content {
     padding: 15px;
+    text-align: center;
 }
 
-h3 {
-    margin: 0 0 10px;
-}
-
-h3 a {
+.project-content h2 {
     color: #D4AF37;
-    text-decoration: none;
 }
 
-h3 a:hover {
+.project-content h3 {
+    margin: 10px 0;
+}
+
+.project-content a {
+    text-decoration: none;
+    color: #D4AF37;
+}
+
+.project-content a:hover {
     text-decoration: underline;
-}
-
-h3 {
-    color: #D4AF37;
-    text-decoration: none;
 }
 
 p {
@@ -255,56 +251,71 @@ h2 {
     text-decoration: none;
 }
 
-@media (max-width: 768px) {
-    header {
-        padding: 10px 15px; 
+/* Media Queries for Responsiveness */
+
+/* For tablets and smaller screens */
+@media (max-width: 1024px) {
+    header h1 {
+        font-size: 3.5em;
     }
 
-    .intro {
-        font-size: 1em;
-        margin: 10px 5%;
-        padding: 10px; 
+    .about-me {
+        flex-direction: column; /* Stack elements vertically */
+        align-items: center; /* Center content */
     }
 
-    #container {
-        padding: 15px;
+    .about-text, .about-photo1 {
+        margin-right: 0;
+        margin-bottom: 20px; /* Space between sections */
+        min-width: auto;
     }
 
-    #blog-articles {
-        flex-direction: column;
+    .about-photo2 {
+        right: 50%;
+        transform: translateX(50%);
     }
 
-    .article {
-        margin: 15px 0;
-        width: 90%;
-    }
-
-    h1 {
-        font-size: 3em;
-        padding: 0.5em; 
-    }
-
-    h2 {
-        font-size: 0.9em;
+    main {
+        padding: 1rem;
     }
 }
 
-
-@media (max-width: 480px) {
-    .intro {
-        font-size: 0.9em;
-        margin: 10px;
+/* For mobile screens */
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 2.5em;
     }
 
-    h1 {
-        font-size: 2em;
-    }
-
-    /* .navlink {
-        font-size: 0.9em;
-    } */
-
-    .article-content {
+    .about-me {
+        flex-direction: column;
+        align-items: center;
         padding: 10px;
     }
+
+    .about-text {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .about-photo1 img, .about-photo2 img {
+        max-width: 80%;
+    }
+
+    .project {
+        max-width: 100%;
+        margin: 10px 0;
+    }
+
+    .project-content h2 {
+        font-size: 1.5em;
+    }
+
+    .project-content h3 {
+        font-size: 1.2em;
+    }
+
+    .project-content a {
+        font-size: 1em;
+    }
 }
+
