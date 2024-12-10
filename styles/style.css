@@ -253,7 +253,6 @@ h2 {
 
 /* Media Queries for Responsiveness */
 
-/* For tablets and smaller screens */
 @media (max-width: 1024px) {
     header h1 {
         font-size: 3.5em;
@@ -271,12 +270,21 @@ h2 {
     }
 
     .about-photo2 {
-        right: 50%;
-        transform: translateX(50%);
+        position: relative;
+        bottom: 0;
+        right: 0;
+        transform: none;
+        width: 150px;
+        height: 150px;
     }
 
     main {
         padding: 1rem;
+    }
+
+    /* Projects section */
+    .project {
+        max-width: 90%; /* Make project cards take up more width */
     }
 }
 
