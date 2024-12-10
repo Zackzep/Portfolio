@@ -14,7 +14,8 @@ header {
     padding: 10px 20px;
     background-color: #2c3e50;
     position: relative;
-    
+    overflow: visible;
+    padding-bottom: 100px;
 }
 
 .header-content {
@@ -63,18 +64,39 @@ header h1 {
     margin-right: 250px; /* Increase the space between text and photo */
 }
 
-.about-photo {
+.about-photo1 {
     flex: 1; /* Takes available space */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative; /* Needed for positioning child elements like about-photo2 */
+}
+
+.about-photo1 img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.about-photo2 {
+    position: absolute; /* Allows overlapping */
+    bottom: 25px; /* Keeps vertical alignment relative to photo1 */
+    right: 650px; /* Adjusted to move the image closer to photo1 */
+    z-index: 1; /* Ensures it's above other elements */
+    width: 250px; /* Larger size for the circular image */
+    height: 250px; /* Ensure it's a perfect circle */
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.about-photo img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+.about-photo2 img {
+    width: 100%; /* Ensure the image fits within the defined size */
+    height: 100%; /* Maintain circular shape */
+    border-radius: 50%; /* Make the image circular */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional shadow for better aesthetics */
+    object-fit: cover; /* Ensure proper image scaling */
 }
 
 
