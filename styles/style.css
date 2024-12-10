@@ -45,12 +45,13 @@ header h1 {
 
 .about-me {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     margin-top: 20px;
     width: 100%;
     max-width: 1200px;
     padding: 20px;
+    position: relative;
     flex-wrap: wrap;
 }
 
@@ -72,7 +73,7 @@ header h1 {
 }
 
 .about-photo1 img {
-    max-width: 100%;
+    width: 100%;
     height: auto;
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -80,8 +81,8 @@ header h1 {
 
 .about-photo2 {
     position: absolute;
-    bottom: 25px;
-    right: 650px;
+    bottom: -20px;
+    right: 350px;
     z-index: 1;
     width: 250px;
     height: 250px;
@@ -251,44 +252,49 @@ h2 {
     text-decoration: none;
 }
 
-/* Media Queries for Responsiveness */
-
 @media (max-width: 1024px) {
     header h1 {
         font-size: 3.5em;
     }
 
     .about-me {
-        flex-direction: column; /* Stack elements vertically */
-        align-items: center; /* Center content */
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about-photo1 img {
+        width: 90%;
+        height: auto;
     }
 
     .about-text, .about-photo1 {
         margin-right: 0;
-        margin-bottom: 20px; /* Space between sections */
-        min-width: auto;
+        margin-bottom: 20px;
     }
 
     .about-photo2 {
-        position: relative;
-        bottom: 0;
-        right: 0;
-        transform: none;
-        width: 150px;
-        height: 150px;
+        width: 180px;
+        height: 180px;
+        left: 40px;
+        bottom: -40px;
+    }
+
+    .about-photo2 img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
     }
 
     main {
         padding: 1rem;
     }
 
-    /* Projects section */
     .project {
-        max-width: 90%; /* Make project cards take up more width */
+        max-width: 90%;
     }
 }
 
-/* For mobile screens */
+
 @media (max-width: 600px) {
     header h1 {
         font-size: 2.5em;
@@ -300,13 +306,28 @@ h2 {
         padding: 10px;
     }
 
+    .about-photo1 img {
+        width: 80%;
+        height: auto;
+    }
+
+    .about-photo2 {
+        width: 150px;
+        height: 150px;
+        left: 0;
+        bottom: 0;
+    }
+
+    .about-photo2 img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+
     .about-text {
         margin-right: 0;
         margin-bottom: 20px;
-    }
-
-    .about-photo1 img, .about-photo2 img {
-        max-width: 80%;
     }
 
     .project {
