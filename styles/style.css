@@ -70,6 +70,7 @@ header h1 {
     display: flex;
     align-items: center;
     position: relative;
+    order: 2; /* Ensure this stays on the right */
 }
 
 .about-photo1 img {
@@ -258,7 +259,7 @@ h2 {
     }
 
     .about-me {
-        flex-direction: column;
+        flex-direction: row-reverse;
         align-items: center;
     }
 
@@ -301,29 +302,40 @@ h2 {
     }
 
     .about-me {
-        flex-direction: column;
+        flex-direction: column; /* Stack vertically */
         align-items: center;
         padding: 10px;
     }
 
+    /* Ensure about-photo1 stays on the right side */
+    .about-photo1 {
+        order: 1; /* Make sure it comes after the text */
+        margin-left: auto; /* Push it to the right */
+        margin-right: auto; /* Center the image */
+        width: 80%; /* Adjust size on mobile */
+    }
+
     .about-photo1 img {
-        width: 80%;
+        width: 100%; /* Full width of the container */
         height: auto;
     }
 
+    /* Fix for about-photo2 to keep it on the left side and prevent overflow */
     .about-photo2 {
-        width: 150px;
-        height: 150px;
-        left: 0;
-        bottom: 0;
+        position: absolute; /* Position it relative to its parent */
+        left: 10%; /* Push it slightly away from the left edge */
+        bottom: -50px; /* Ensure it doesn't overlap too much */
+        width: 150px; /* Set width */
+        height: 150px; /* Set height */
+        z-index: 1; /* Make sure it's above other elements */
     }
 
     .about-photo2 img {
         width: 100%;
         height: 100%;
         object-fit: cover;
+        border-radius: 50%;
     }
-
 
     .about-text {
         margin-right: 0;
