@@ -7,26 +7,7 @@
     <title>Zack Z Portfolio</title>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
     <link href="styles/style.css" rel="stylesheet">
-    <script>
-    function toggleMenu() {
-        const hamburgerContainer = document.querySelector('.hamburger-container');
-        hamburgerContainer.classList.toggle('active');
-    }
-
-    window.addEventListener('load', () => {
-        const hamburgerContainer = document.querySelector('.hamburger-container');
-        hamburgerContainer.addEventListener('click', toggleMenu);
-    });
-
-    document.addEventListener('click', (event) => {
-        const hamburgerContainer = document.querySelector('.hamburger-container');
-        const isClickInside = hamburgerContainer.contains(event.target);
-
-        if (!isClickInside) {
-            hamburgerContainer.classList.remove('active');
-        }
-    });
-    </script>
+    <script src="scripts/hamburger.js"></script>
 </head>
 <body>
     <header>
