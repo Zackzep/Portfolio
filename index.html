@@ -12,6 +12,14 @@
             const dropdown = document.querySelector('.dropdown-menu');
             dropdown.classList.toggle('active');
         }
+        if (window.innerWidth <= 1024) {
+        const hamburgerContainer = document.querySelector('.hamburger-container');
+        hamburgerContainer.addEventListener('click', toggleMenu);
+        } 
+        else {
+        const hamburgerContainer = document.querySelector('.hamburger-container');
+        hamburgerContainer.removeEventListener('click', toggleMenu);
+}
     </script>
 </head>
 <body>
