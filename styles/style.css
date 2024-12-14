@@ -63,6 +63,7 @@ header h1 {
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     margin-right: 150px;
+    text-align: center;
 }
 
 .about-photo1 {
@@ -226,10 +227,12 @@ main {
 }
 
 .project-content h2 {
+    font-family: 'Playfair Display', serif;
     color: #D4AF37;
 }
 
 .project-content h3 {
+    font-family: 'Playfair Display', serif;
     margin: 10px 0;
 }
 
@@ -245,9 +248,11 @@ main {
 p {
     margin: 0 0 15px;
     color: #D4AF37;
+    font-family: 'Nunito', sans-serif;
 }
 
 h2 {
+    font-family: 'Playfair Display', serif;
     color: #D4AF37;
     text-decoration: none;
 }
