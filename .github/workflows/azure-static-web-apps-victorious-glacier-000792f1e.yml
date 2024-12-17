@@ -26,7 +26,7 @@ jobs:
           azure_static_web_apps_api_token: ${{ secrets.AZURE_STATIC_WEB_APPS_API_TOKEN_VICTORIOUS_GLACIER_000792F1E }}
           repo_token: ${{ secrets.GITHUB_TOKEN }} # Used for Github integrations (i.e. PR comments)
           action: "upload"  # Ensure this action is passed correctly
-          app_location: "index.html"  # Path to your app (root directory)
+          app_location: "/"  # Path to your app (root directory)
           api_location: ""  # Optional - empty if no API
           output_location: "/"  # Built app content directory
           
